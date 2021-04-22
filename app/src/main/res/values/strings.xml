@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IMC App 2.0</string>
+
+    <!--    Strings da main activity-->
+    <string name="main_title">Calculadora Saudável</string>
+    <string name="fazer_hoje">O quê você deseja fazer hoje?</string>
+</resources>
