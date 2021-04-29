@@ -44,32 +44,36 @@
               android:text="Peso:"
               android:textAppearance="@style/label_dark_background"
               android:layout_marginTop="16dp"/>
+
             <EditText
+                android:id="@+id/ed_peso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Qual seu Peso?"
-                android:id="@+id/ed_peso"
-                android:background="@drawable/edit_text_background"
-                android:padding="10dp"
                 android:layout_marginTop="4dp"
-                android:inputType="number"/>
+                android:background="@drawable/edit_text_background"
+                android:hint="Qual seu Peso?"
+                android:inputType="number"
+                android:padding="10dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Altura:"
                 android:textAppearance="@style/label_dark_background"
                 android:layout_marginTop="16dp" />
+
             <EditText
+                android:id="@+id/ed_altura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Qual sua Altura?"
-                android:id="@+id/ed_altura"
-                android:background="@drawable/edit_text_background"
-                android:padding="10dp"
                 android:layout_marginTop="4dp"
-                android:inputType="numberDecimal"/>
+                android:background="@drawable/edit_text_background"
+                android:hint="Qual sua Altura?"
+                android:inputType="numberDecimal"
+                android:padding="10dp" />
 
             <Button
+                android:id="@+id/button_calcular_imc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
