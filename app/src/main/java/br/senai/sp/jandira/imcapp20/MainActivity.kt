@@ -3,6 +3,7 @@ package br.senai.sp.jandira.imcapp20
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.cardview.widget.CardView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,9 +11,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val cardImc: CardView = findViewById(R.id.card_imc)
+        val cardNcd: CardView = findViewById(R.id.card_ncd)
+
+
         card_imc.setOnClickListener(){
             val abrirImc = Intent(this, ImcActivity::class.java)
             startActivity(abrirImc)
+        }
+
+        card_ncd.setOnClickListener() {
+            val abrirNcd = Intent(this, NcdActivity::class.java)
+            startActivity(abrirNcd)
         }
     }
 }

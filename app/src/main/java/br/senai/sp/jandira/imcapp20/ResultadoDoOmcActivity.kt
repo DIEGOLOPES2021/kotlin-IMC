@@ -12,7 +12,8 @@ class ResultadoDoOmcActivity : AppCompatActivity() {
 
         val txtImc: TextView = findViewById(R.id.text_view_imc)
         val txtStatus: TextView = findViewById(R.id.text_view_status)
-
+        val txtStatusRisk: TextView = findViewById(R.id.text_view_frase_status)
+        val txtDica: TextView = findViewById(R.id.text_view_dica)
         //pegando o valor da outra pagina e recebe nessa /ImcActivery.kit
 
         val peso = intent.getDoubleExtra("peso", 0.0)
@@ -21,8 +22,12 @@ class ResultadoDoOmcActivity : AppCompatActivity() {
         //formatado para aparecer apenas o valor com duas casas decimais
         val imc = calcularImc(peso, altura)
 
+        val resultado = obterStatus(imc)
+
         txtImc.text = String.format("%.2f", imc)
-        txtStatus.text = obterStatus(imc)
+        txtStatus.text = resultado [0]
+        txtStatusRisk.text = resultado[1]
+       txtDica.text = getDicaDoDia()
 
 
     }
