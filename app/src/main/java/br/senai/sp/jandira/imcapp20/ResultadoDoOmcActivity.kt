@@ -19,11 +19,11 @@ class ResultadoDoOmcActivity : AppCompatActivity() {
         val peso = intent.getDoubleExtra("peso", 0.0)
         val altura = intent.getDoubleExtra("altura", 0.0)
 
-        //formatado para aparecer apenas o valor com duas casas decimais
         val imc = calcularImc(peso, altura)
 
         val resultado = obterStatus(imc)
 
+        //formatado para aparecer apenas o valor com duas casas decimais
         txtImc.text = String.format("%.2f", imc)
         txtStatus.text = resultado [0]
         txtStatusRisk.text = resultado[1]

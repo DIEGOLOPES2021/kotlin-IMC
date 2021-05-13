@@ -35,7 +35,7 @@
         android:layout_height="200dp"
         android:background="@android:color/transparent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_imc"
@@ -48,14 +48,16 @@
 
 
             <LinearLayout
-                android:layout_width="101dp"
-                android:layout_height="wrap_content">
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
+
                     app:srcCompat="@drawable/peso" />
 
                 <TextView
@@ -67,7 +69,9 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
+
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
